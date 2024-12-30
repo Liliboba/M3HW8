@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/cakeFragment">
+    <fragment
+        android:id="@+id/cakeFragment"
+        android:name="com.example.m3hw8.CakeFragment"
+        android:label="fragment_cake"
+        tools:layout="@layout/fragment_cake" >
+        <action
+            android:id="@+id/action_cakeFragment_to_cakeDetailFragment"
+            app:destination="@id/cakeDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/cakeDetailFragment"
+        android:name="com.example.m3hw8.CakeDetailFragment"
+        android:label="fragment_cake_detail"
+        tools:layout="@layout/fragment_cake_detail" />
+</navigation>
